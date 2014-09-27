@@ -18,7 +18,7 @@ public class MainActivity extends Activity
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-    //Refer the button from xml with the id of button b1 which is "button1"
+        //Refer the button from xml with the id of button b1 which is "button1"
 	b=(Button)findViewById(R.id.button1);
 	
 	// Set the listener for button , i'm using on click listener for button
