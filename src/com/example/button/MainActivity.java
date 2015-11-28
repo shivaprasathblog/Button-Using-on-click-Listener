@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity 
 {
-	// Define and declare a button here 
+	//STEP 1: Declare the button as b 
 	Button b;
 
 	@Override
@@ -18,10 +18,11 @@ public class MainActivity extends Activity
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-        //Refer the button from xml with the id of button b1 which is "button1"
+     	//STEP 2: Refer the button from xml(Layout file ) with its ID(button1) 
 	b=(Button)findViewById(R.id.button1);
 	
-	// Set the listener for button , i'm using on click listener for button
+	//STEP 3: Set the listener and create the object for the listener ( button-b )
+	/**Since we want perform action on button click we are using OnClickListener()**
 	b.setOnClickListener(new OnClickListener()
 	{
 		
@@ -29,8 +30,10 @@ public class MainActivity extends Activity
 		public void onClick(View arg0)
 		{
 			// TODO Auto-generated method stub
+			/**Action to be performed on Button click**/
 			
 			//The message to shown in toast when user clicks on the button
+			//Toast.makeText(Context,"text",duration).method for showing text;
 			Toast.makeText(MainActivity.this,"You have cliked a button",Toast.LENGTH_LONG).show();
 			
 			
