@@ -22,7 +22,7 @@ public class MainActivity extends Activity
 	b=(Button)findViewById(R.id.button1);
 	
 	//STEP 3: Set the listener and create the object for the listener ( button-b )
-	/**Since we want perform action on button click we are using OnClickListener()**
+	/**Since we want perform action on button click we are using OnClickListener()**/
 	b.setOnClickListener(new OnClickListener()
 	{
 		
